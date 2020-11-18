@@ -1,0 +1,12 @@
+**Credit Card Fraud Detection**
+*Anonymized credit card transactions labeled as fradulent or genuine*
+
+*Inspiration*
+
+Identify fradulent credit card transactions.
+Given the class imbalance ratio, we recommend measuring the accuracy using the Area Under the precision-Recall Curve (AUPRC). 
+Confusion matrix accuracy is not meaningful for unbalanced classification.
+
+See here for the link to the data: [https://www.kaggle.com/mlg-ulb/creditcardfraud]
+
+
