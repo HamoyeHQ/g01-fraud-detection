@@ -1,3 +1,0 @@
-*Predicting Food Delivery Time*
-
-The provided data contains three .xlsx file with 18 columns. Use this data to predict how much time it will take food to be delivered
