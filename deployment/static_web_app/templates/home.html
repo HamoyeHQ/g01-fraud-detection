@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Card Fraud Detection App</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./styles.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+  <h1>Credit Card Fraud Detection App</h1>
+    <h3> A project by group 01 fraud detection in Hamoye data science internship 2020 </h3>
+    <h3> Enter the transaction ID to predict legitimacy of the transaction</h3>
+
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="number" name="transaction_ID" placeholder="Enter the Transaction ID" required="required" />
+      <br>
+      <br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+    {{pred}}
+
+ </div>
+ 
+
+</body>
+</html>
