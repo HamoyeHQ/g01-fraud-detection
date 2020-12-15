@@ -59,7 +59,7 @@ def predict():
             value = "Not Fraudulent"
             proba = model.predict_proba(Xtt)[0][0] # gets probability of being negative
 
-        return render_template('home.html', pred='This Transaction is likely {} with a probability of {}'.format(value, proba))
+        return render_template('home.html', pred='This Transaction is {} with a probability of {}'.format(value, proba))
 
     else: # negative ID number not allowed!
         return render_template('home.html', pred='Your input ID is not valid, please enter a valid ID')
